@@ -127,24 +127,6 @@
 
   <title>写在2018年的开始 | Hello World 2019</title>
   
-<script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '<app_id>',
-      xfbml      : true,
-      version    : 'v2.10'
-    });
-  };
-
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "//connect.facebook.net/zh_Hans/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
-</script>
-
 
 
 
@@ -299,7 +281,8 @@
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="/2018/01/02/20180102hello-world/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count fb-comments-count" data-href="http://yoursite.com/2018/01/02/20180102hello-world/" itemprop="commentCount">0</span> comments
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2018/01/02/20180102hello-world/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -404,11 +387,11 @@
 
   
     <div class="comments" id="comments">
-      <div class="fb-comments"
-           data-href="http://yoursite.com/2018/01/02/20180102hello-world/"
-           data-numposts="10"
-           data-width="100%"
-           data-colorscheme="light">
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
       </div>
     </div>
 
